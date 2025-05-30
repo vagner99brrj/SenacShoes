@@ -1,10 +1,67 @@
 /* Estilizaão globais*/
-body{
-    background-color: darkkhaki;
+body {
+  background-color: #f7f7f7;
+  margin: 0px;
+  margin-top: 60px;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif; /* Faz com que o container se comporte em grade*/
+  gap: 60px; /*Espaçamento para todos os lados entre os componetes*/
+  justify-items: center; /*Centraliza na hotizontal todos os itens  */
 }
+img {
+  max-width: 100%; /* Faz com que a imagem ocupe apenas 100% do elemento pai(coluna)*/
+}
+
+a {
+  text-decoration: none; /* Retira a decoração do link (underline)*/
+}
+p,
+h1,
+h2,
+h3 {
+  margin: 0px;
+}
+p {
+  font-size: 20px; /**/
+}
+
 /*Estilização do conteudo*/
+.menu {
+  display: flex; /*garante que os limks sempre estarão um do lado do outro*/
+  gap: 20px;
+  justify-content: center;
+}
+.menu a {
+  text-transform: uppercase;
+  background-color: #fff;
+  padding: 15px 30px;
+  color: black;
+  border-radius: 50px;
+}
+.menu a:hover {
+  background-color: #9353ff;
+}
 
 .conteudo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 1000px;
+}
+.botao {
+  background-color: #9353ff;
+  padding: 15px 30px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.botão:hover {
+  background-color: #fff;
+  color: black;
+}
+/* Estilização do footer*/
+.rodape {
+  background-color: #fff;
+  text-align: center;
+  padding: 40px;
+  width: 100%;
 }
